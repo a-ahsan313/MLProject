@@ -1,0 +1,363 @@
+/* ========================================
+   GLOBAL
+======================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:linear-gradient(135deg,#4F46E5,#7C3AED,#2563EB);
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+}
+
+.navbar-brand{
+    font-size:1.5rem;
+    font-weight:700;
+}
+
+.navbar-brand i{
+    color:#FFD54F;
+}
+
+.nav-link{
+    color:white !important;
+    margin-left:20px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#FFD54F !important;
+}
+
+/* ========================================
+   HERO
+======================================== */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:3.3rem;
+    font-weight:700;
+    line-height:1.2;
+}
+
+.hero p{
+    margin-top:20px;
+    color:#ECECEC;
+    font-size:1.15rem;
+    line-height:1.8;
+}
+
+.hero-img{
+    width:100%;
+    max-width:420px;
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn-primary{
+
+    background:#06B6D4;
+
+    border:none;
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#0891B2;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+.btn-outline-light{
+
+    border-radius:12px;
+
+    padding:14px 30px;
+
+}
+
+.btn-outline-light:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* ========================================
+   FEATURES
+======================================== */
+
+.features{
+
+    padding:100px 0;
+
+}
+
+.feature-card{
+
+    background:rgba(255,255,255,.12);
+
+    backdrop-filter:blur(16px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.20);
+
+}
+
+.feature-card i{
+
+    font-size:55px;
+
+    color:#FFD54F;
+
+}
+
+.feature-card h4{
+
+    margin-top:20px;
+
+    font-weight:600;
+
+}
+
+.feature-card p{
+
+    color:#ECECEC;
+
+    margin-top:15px;
+
+    line-height:1.7;
+
+}
+
+/* ========================================
+   TECHNOLOGIES
+======================================== */
+
+.tech{
+
+    padding:80px 0;
+
+}
+
+.tech-badge{
+
+    display:inline-block;
+
+    margin:10px;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,.15);
+
+    border:1px solid rgba(255,255,255,.20);
+
+    transition:.3s;
+
+    font-weight:500;
+
+}
+
+.tech-badge:hover{
+
+    background:#fff;
+
+    color:#4F46E5;
+
+    transform:scale(1.05);
+
+}
+
+/* ========================================
+   FOOTER
+======================================== */
+
+footer{
+
+    margin-top:80px;
+
+    padding:30px;
+
+    background:rgba(0,0,0,.20);
+
+}
+
+footer p{
+
+    margin:0;
+
+    color:#ECECEC;
+
+}
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#7C3AED;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#ddd;
+
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media(max-width:992px){
+
+    .hero{
+
+        text-align:center;
+
+        padding-top:80px;
+
+    }
+
+    .hero h1{
+
+        font-size:2.6rem;
+
+    }
+
+    .hero-img{
+
+        margin-top:50px;
+
+        max-width:320px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+
+        font-size:2.2rem;
+
+    }
+
+    .hero p{
+
+        font-size:1rem;
+
+    }
+
+    .feature-card{
+
+        margin-bottom:25px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .hero{
+
+        min-height:auto;
+
+        padding:70px 0;
+    }
+
+    .hero h1{
+
+        font-size:1.8rem;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        margin-bottom:15px;
+
+    }
+
+}

@@ -1,0 +1,337 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(135deg,#4F46E5,#7C3AED,#2563EB);
+    overflow-x:hidden;
+    position:relative;
+}
+
+/* ===========================
+   BACKGROUND CIRCLES
+=========================== */
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(10px);
+    opacity:.35;
+    animation:float 8s ease-in-out infinite;
+}
+
+.circle1{
+    width:320px;
+    height:320px;
+    background:#ffffff;
+    top:-120px;
+    left:-120px;
+}
+
+.circle2{
+    width:260px;
+    height:260px;
+    background:#ffffff;
+    right:-80px;
+    bottom:-80px;
+    animation-delay:2s;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(20px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+.main-title{
+
+    color:#fff;
+    font-size:2.7rem;
+    font-weight:700;
+    letter-spacing:.5px;
+
+}
+
+.subtitle{
+
+    color:#ECECEC;
+    font-size:1.1rem;
+    margin-top:10px;
+
+}
+
+/* ===========================
+   GLASS CARD
+=========================== */
+
+.glass-card{
+
+    background:rgba(255,255,255,.16);
+
+    border:1px solid rgba(255,255,255,.25);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    border-radius:25px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+    transition:.4s;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+/* ===========================
+   LABELS
+=========================== */
+
+.form-label{
+
+    color:#fff;
+
+    font-weight:600;
+
+    margin-bottom:8px;
+
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.form-control,
+
+.form-select{
+
+    border:none;
+
+    border-radius:12px;
+
+    height:50px;
+
+    background:rgba(255,255,255,.90);
+
+    transition:.3s;
+
+}
+
+.form-control:focus,
+
+.form-select:focus{
+
+    border:none;
+
+    box-shadow:0 0 0 .25rem rgba(255,255,255,.35);
+
+    background:#fff;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.predict-btn{
+
+    background:linear-gradient(90deg,#06B6D4,#3B82F6);
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    height:55px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    transition:.35s;
+
+}
+
+.predict-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    background:linear-gradient(90deg,#0891B2,#2563EB);
+
+    color:white;
+
+}
+
+/* ===========================
+   RESULT BOX
+=========================== */
+
+.prediction-box{
+
+    margin-top:40px;
+
+    background:rgba(255,255,255,.18);
+
+    border-radius:20px;
+
+    padding:25px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+.prediction-box h4{
+
+    color:#fff;
+
+    font-weight:600;
+
+}
+
+.prediction-box h1{
+
+    margin-top:10px;
+
+    color:#FFD54F;
+
+    font-size:3rem;
+
+    font-weight:700;
+
+}
+
+/* ===========================
+   ICONS
+=========================== */
+
+.form-label i{
+
+    margin-right:8px;
+
+    color:#FFD54F;
+
+}
+
+.main-title i{
+
+    color:#FFD54F;
+
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#6D28D9;
+
+    border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#E5E7EB;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .glass-card{
+
+        padding:30px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .main-title{
+
+        font-size:2rem;
+
+    }
+
+    .subtitle{
+
+        font-size:1rem;
+
+    }
+
+    .glass-card{
+
+        padding:25px;
+
+    }
+
+}
+
+@media(max-width:576px){
+
+    .main-title{
+
+        font-size:1.7rem;
+
+    }
+
+    .prediction-box h1{
+
+        font-size:2.3rem;
+
+    }
+
+    .glass-card{
+
+        border-radius:18px;
+
+    }
+
+}
